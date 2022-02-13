@@ -1,0 +1,147 @@
+body {
+  background-color: #0c0e1d;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  color: #fafffd;
+  z-index: 3;
+  top: 14%;
+}
+
+.logo span {
+  padding: 0;
+  margin: 0;
+  color: #fafffd;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.logo span:before {
+  content: '';
+  -webkit-animation: animate infinite 8s;
+          animation: animate infinite 8s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    content: 'Beyond The Shadow Realms';
+    opacity: 1;
+    color: #c78018;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    content: 'The Light Emerges';
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    content: 'Beyond The Shadow Realms';
+    opacity: 1;
+    color: #c78018;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    content: 'The Light Emerges';
+    opacity: 1;
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+section .layer {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  width: 63px;
+  height: 53vh;
+  background: #fff;
+  -webkit-box-shadow: inset -10px 0 40px rgba(0, 0, 0, 0.1), inset 10px 0 40px rgba(0, 0, 0, 0.322), inset -8px 0 8px rgba(255, 255, 255, 0.25), inset 8px 0 8px rgba(255, 255, 255, 0.25), 0 0 50px black;
+          box-shadow: inset -10px 0 40px rgba(0, 0, 0, 0.1), inset 10px 0 40px rgba(0, 0, 0, 0.322), inset -8px 0 8px rgba(255, 255, 255, 0.25), inset 8px 0 8px rgba(255, 255, 255, 0.25), 0 0 50px black;
+}
+
+section .layer.layer1 {
+  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background-size: 35px 35px;
+  -webkit-transform: translate(-50%, -50%) rotate(-65deg);
+          transform: translate(-50%, -50%) rotate(-65deg);
+  -webkit-animation: bars 2s linear infinite;
+          animation: bars 2s linear infinite;
+}
+
+section .layer.layer2 {
+  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background-size: 35px 35px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: bar 2s linear infinite;
+          animation: bar 2s linear infinite;
+  height: 30vh;
+}
+
+section .layer.layer3 {
+  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background-size: 35px 35px;
+  -webkit-transform: translate(-50%, -50%) rotate(65deg);
+          transform: translate(-50%, -50%) rotate(65deg);
+  -webkit-animation: bars 2s linear infinite;
+          animation: bars 2s linear infinite;
+}
+
+section .layer.layer4 {
+  background: #0c0e1d;
+  background-size: 35px 35px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  height: 60vh;
+  width: 100px;
+}
+
+@-webkit-keyframes bar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -35px 35px;
+  }
+}
+
+@keyframes bar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -35px 35px;
+  }
+}
+
+@-webkit-keyframes bars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 35px -35px;
+  }
+}
+
+@keyframes bars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 35px -35px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

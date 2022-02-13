@@ -1,0 +1,115 @@
+$bgColor: #0c0e1d;
+$bgColor2: #eedfc2;
+$hoverBtn: #b3001b;
+
+$mainTxtColor : #c78018;
+$txtColor: #fafffd;
+
+
+body {
+    background-color: $bgColor;
+
+}
+
+
+.logo {
+    position: relative;
+    text-align: center;
+    color: $txtColor;
+    z-index: 3;
+    top: 14%;
+
+    span {
+        padding: 0;
+        margin: 0;
+        color: $txtColor;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    span:before {
+        content: '';
+        animation: animate infinite 8s;
+    }
+
+}
+
+@keyframes animate {
+    0% {
+        content: 'Beyond The Shadow Realms';
+        opacity: 1;
+        color: $mainTxtColor;
+    }
+    35% {
+        opacity: 0;
+    }
+    
+    100% {
+        content: 'The Light Emerges';
+        opacity: 1;
+    }
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .layer {
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        width: 63px;
+        height: 53vh;
+        background: #fff;
+        box-shadow: inset -10px 0 40px rgba(0, 0, 0, 0.1),
+        inset 10px 0 40px rgba(0, 0, 0, 0.322),
+        inset -8px 0 8px rgba(255, 255, 255, 0.25),
+        inset 8px 0 8px rgba(255, 255, 255, 0.25),
+        0 0 50px rgba(0, 0, 0, 1);
+    }
+    .layer.layer1 {
+        background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+        background-size: 35px 35px;
+        transform: translate(-50%, -50%) rotate(-65deg);
+        animation: bars 2s linear infinite;
+    }
+    .layer.layer2 {
+        background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+        background-size: 35px 35px;
+        transform: translate(-50%, -50%);
+        animation: bar 2s linear infinite;
+        height: 30vh;
+    }
+    .layer.layer3 {
+        background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+        background-size: 35px 35px;
+        transform: translate(-50%, -50%) rotate(65deg);
+        animation: bars 2s linear infinite;
+    }
+    .layer.layer4 {
+        background: $bgColor;
+        background-size: 35px 35px;
+        transform: translate(-50%, -50%) rotate(90deg);
+        height: 60vh;
+        width: 100px;
+    }
+}
+
+@keyframes bar {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -35px 35px;
+    }
+}
+@keyframes bars {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 35px -35px;
+    }
+}
