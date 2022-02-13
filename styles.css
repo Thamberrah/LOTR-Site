@@ -15,7 +15,7 @@ body {
   margin: 0;
   color: #fafffd;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-  font-size: 45px;
+  font-size: 58px;
   font-weight: 600;
 }
 
@@ -73,7 +73,7 @@ section .layer {
 }
 
 section .layer.layer1 {
-  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background: radial-gradient(#c78018 5px, #000 9px, #000 9px, transparent 9px);
   background-size: 35px 35px;
   -webkit-transform: translate(-50%, -50%) rotate(-65deg);
           transform: translate(-50%, -50%) rotate(-65deg);
@@ -82,7 +82,7 @@ section .layer.layer1 {
 }
 
 section .layer.layer2 {
-  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background: radial-gradient(#c78018 5px, #000 9px, #000 9px, transparent 9px);
   background-size: 35px 35px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -92,7 +92,7 @@ section .layer.layer2 {
 }
 
 section .layer.layer3 {
-  background: radial-gradient(#ca8f25 5px, #000 9px, #000 9px, transparent 9px);
+  background: radial-gradient(#c78018 5px, #000 9px, #000 9px, transparent 9px);
   background-size: 35px 35px;
   -webkit-transform: translate(-50%, -50%) rotate(65deg);
           transform: translate(-50%, -50%) rotate(65deg);
